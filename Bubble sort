@@ -1,0 +1,16 @@
+Mylist = [0,1,2,3,5,4,6,7,8,9]
+n = len(Mylist)-1
+swapped = False
+for i in range(len(Mylist)):
+    for j in range(n):
+        if Mylist[j] > Mylist[j+1]:
+            swapped == True
+            Temp = Mylist[j]
+            Mylist[j] = Mylist[j+1]
+            Mylist[j+1] = Temp
+    if swapped == False:
+        print()
+        break
+    n = n-1
+print(Mylist)
+
